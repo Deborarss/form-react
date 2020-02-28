@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+const Base = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
   * {
@@ -24,3 +24,5 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 `;
+
+export default Base;

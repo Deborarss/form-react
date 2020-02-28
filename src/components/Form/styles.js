@@ -49,6 +49,10 @@ export const Input = styled.input`
   :focus {
     border-color: ${props => (props.error ? '#ee4646' : '#8e44ad')};
   }
+
+  :hover {
+    border-color: #8e44ad;
+  }
 `;
 
 export const LoginBtn = styled.button`

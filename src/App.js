@@ -1,11 +1,11 @@
 import React from 'react';
 import Form from './components/Form';
-import GlobalStyle from './styles/global';
+import Styles from './styles';
 
 const App = () => {
   return (
     <>
-      <GlobalStyle />
+      <Styles />
       <Form />
     </>
   );

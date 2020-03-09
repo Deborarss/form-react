@@ -4,6 +4,11 @@ const useForm = (callback, validate) => {
   const [values, setValues] = useState({ email: '', password: '' });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [show, setShow] = useState(false);
+
+  function showPassword() {
+    setShow(old => !old);
+  }
 
   const handleChanges = e => {
     setValues({
@@ -30,6 +35,8 @@ const useForm = (callback, validate) => {
     errors,
     handleChanges,
     handleSubmit,
+    show,
+    showPassword,
   };
 };
 

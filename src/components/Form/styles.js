@@ -55,6 +55,17 @@ export const Input = styled.input`
   }
 `;
 
+export const Icon = styled.img`
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+  transition: transform 100ms linear;
+
+  :hover {
+    transform: scale(1.1);
+  }
+`;
+
 export const LoginBtn = styled.button`
   display: inline-block;
   width: 100%;
